@@ -31,7 +31,7 @@ namespace WpfApp1
             var client = new WebClient();
             var response = client.DownloadString("http://127.0.0.1:63450/api/hotels");
             CurrentHotel = JsonConvert.DeserializeObject<List<Hotel>>(response);
-
+            DataContext = this;
         }
     }
 }
