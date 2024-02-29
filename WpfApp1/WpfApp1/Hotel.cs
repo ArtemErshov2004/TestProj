@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    public class Hotel
+    internal class Hotel
     {
         public int Id { get; set; }
         public string Name { get; set; }
